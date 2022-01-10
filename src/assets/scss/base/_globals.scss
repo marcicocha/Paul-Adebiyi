@@ -29,7 +29,7 @@ body {
 	line-height: 1.5;
 	font-family: $regular-font;
 	font-size: 14px;
-    position: relative;
+	position: relative;
 	color: $dark-blue;
 	// color: $medium-grey;
 	overflow-x: hidden;
@@ -131,6 +131,9 @@ body {
 	@include breakpoint-up(large) {
 		padding: $padding-web;
 	}
+}
+.t-c {
+	text-align: center;
 }
 h1 {
 	color: $dark-blue;

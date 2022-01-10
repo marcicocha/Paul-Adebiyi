@@ -3,7 +3,7 @@
 
 .header {
 	position: absolute;
-	background-color: color;
+	background-color: transparent;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
     width: 100%;
@@ -16,7 +16,7 @@
 }
 .static {
 	position: static;
-	background-color: white;
+	background-color: $white;
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
 }

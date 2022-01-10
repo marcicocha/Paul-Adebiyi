@@ -1,0 +1,36 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.footer {
+	background-color: $dark-blue;
+	color: $light-grey !important;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1rem;
+		padding-left: 0;
+		li {
+			&:not(:first-child),
+			&:not(:last-child) {
+				padding: 0 1rem;
+			}
+			a {
+				color: $light-grey !important;
+			}
+		}
+	}
+	&_page--link {
+		li {
+			&:not(:last-child) {
+				border-right: 1px solid $light-grey;
+			}
+		}
+	}
+	.copyright {
+		margin-top: 2rem;
+		background-color: $dark-blue;
+	}
+}
