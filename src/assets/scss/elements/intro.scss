@@ -1,0 +1,7 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.intro {
+	height: 100vh;
+	background-color: $light-grey;
+}

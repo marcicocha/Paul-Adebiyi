@@ -1,0 +1,146 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	word-spacing: 1px;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+}
+a,
+a:visited,
+a:hover {
+	text-decoration: none;
+	// color: $primary;
+	color: $dark-blue;
+
+	cursor: pointer;
+}
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-family: $regular-font;
+	font-size: 14px;
+    position: relative;
+	color: $dark-blue;
+	// color: $medium-grey;
+	overflow-x: hidden;
+	@include breakpoint-up(large) {
+		line-height: 1.6;
+		font-size: 16px;
+	}
+	@include breakpoint-up(xxlarge) {
+		line-height: 1.8;
+	}
+	&.noscroll {
+		overflow: hidden;
+	}
+}
+.flex {
+	@include breakpoint-up(large) {
+		display: flex;
+
+		&-jc-sb {
+			justify-content: space-between;
+		}
+		&-jc-sa {
+			justify-content: space-around;
+		}
+		&-jc-c {
+			justify-content: center;
+		}
+		&-jc-se {
+			justify-content: space-evenly;
+		}
+		&-ai-c {
+			align-items: center;
+		}
+		&-ai-e {
+			align-items: end;
+		}
+		&-50 {
+			flex: 1;
+		}
+		&-wrap {
+			flex-wrap: wrap;
+		}
+	}
+}
+.hide-for-mobile {
+	@include breakpoint-down(medium) {
+		display: none !important;
+	}
+}
+.col-50 {
+	@include breakpoint-down(medium) {
+		width: 100%;
+	}
+	@include breakpoint-up(large) {
+		width: 50%;
+	}
+}
+.col-60 {
+	@include breakpoint-down(medium) {
+		width: 100%;
+	}
+	@include breakpoint-up(large) {
+		width: 60%;
+	}
+}
+.col-40 {
+	@include breakpoint-down(medium) {
+		width: 100%;
+	}
+	@include breakpoint-up(large) {
+		width: 40%;
+	}
+}
+.col-55 {
+	@include breakpoint-down(medium) {
+		width: 100%;
+	}
+	@include breakpoint-up(large) {
+		width: 55%;
+	}
+}
+.col-45 {
+	@include breakpoint-down(medium) {
+		width: 100%;
+	}
+	@include breakpoint-up(large) {
+		width: 45%;
+	}
+}
+.hide-for-desktop {
+	@include breakpoint-up(large) {
+		display: none !important;
+	}
+}
+.container {
+	@include breakpoint-down(medium) {
+		padding: $padding-mobile;
+	}
+	@include breakpoint-up(large) {
+		padding: $padding-web;
+	}
+}
+h1 {
+	color: $dark-blue;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-family: $header-font;
+
+	@include breakpoint-up(large) {
+		font-size: 3rem;
+		line-height: 65px;
+	}
+}
